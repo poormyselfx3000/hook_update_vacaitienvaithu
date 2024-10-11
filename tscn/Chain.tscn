@@ -1,0 +1,37 @@
+[gd_scene load_steps=6 format=3 uid="uid://bppg0356iji05"]
+
+[ext_resource type="Texture2D" uid="uid://b6orxo784gv1g" path="res://assets/hook.png" id="1"]
+[ext_resource type="Texture2D" uid="uid://vk61aqm8t1qm" path="res://assets/link.png" id="2"]
+[ext_resource type="Script" path="res://scripts/Chain.gd" id="3"]
+[ext_resource type="AudioStream" uid="uid://jx3kpn0u3eb4" path="res://assets/sef/hooked.wav" id="4_velac"]
+
+[sub_resource type="CapsuleShape2D" id="1"]
+radius = 4.40329
+height = 8.80657
+
+[node name="Chain" type="Node2D"]
+script = ExtResource("3")
+
+[node name="Links" type="Sprite2D" parent="."]
+rotation = -6.28319
+texture = ExtResource("2")
+centered = false
+offset = Vector2(-8, 14)
+region_enabled = true
+region_rect = Rect2(0, 0, 16, 360)
+
+[node name="Tip" type="CharacterBody2D" parent="."]
+collision_layer = 4
+
+[node name="Hook" type="Sprite2D" parent="Tip"]
+texture = ExtResource("1")
+offset = Vector2(0, 8)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Tip"]
+position = Vector2(0, 15.7008)
+shape = SubResource("1")
+
+[node name="hookedsound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("4_velac")
+volume_db = -14.629
+pitch_scale = 1.79

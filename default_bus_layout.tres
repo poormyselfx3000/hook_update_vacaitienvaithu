@@ -1,0 +1,13 @@
+[gd_resource type="AudioBusLayout" load_steps=3 format=3 uid="uid://clrv22fshppy5"]
+
+[sub_resource type="AudioEffectPhaser" id="AudioEffectPhaser_ohw8b"]
+resource_name = "Phaser"
+
+[sub_resource type="AudioEffectAmplify" id="AudioEffectAmplify_ypu2t"]
+resource_name = "Amplify"
+
+[resource]
+bus/0/effect/0/effect = SubResource("AudioEffectPhaser_ohw8b")
+bus/0/effect/0/enabled = true
+bus/0/effect/1/effect = SubResource("AudioEffectAmplify_ypu2t")
+bus/0/effect/1/enabled = true

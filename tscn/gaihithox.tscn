@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://co0qf56llly0u"]
+
+[ext_resource type="Script" path="res://tscn/gaihithox.gd" id="1_cufup"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qixm8"]
+size = Vector2(20, 7.39247)
+
+[node name="gaihithox" type="Area2D" groups=["gai"]]
+script = ExtResource("1_cufup")
+
+[node name="hitbox" type="CollisionShape2D" parent="."]
+position = Vector2(0, 8.41781)
+scale = Vector2(2.29032, 2.54795)
+shape = SubResource("RectangleShape2D_qixm8")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
