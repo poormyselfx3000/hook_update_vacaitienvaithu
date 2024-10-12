@@ -3,7 +3,7 @@
 [ext_resource type="TileSet" uid="uid://cl18d18h6mb24" path="res://Tiles/tiles.tres" id="1"]
 [ext_resource type="PackedScene" uid="uid://chv0mxt4txdpe" path="res://tscn/Player.tscn" id="2"]
 [ext_resource type="Script" path="res://scripts/Camera2D.gd" id="3"]
-[ext_resource type="PackedScene" uid="uid://co0qf56llly0u" path="res://tscn/gaihithox.tscn" id="4_13k2b"]
+[ext_resource type="Texture2D" uid="uid://btwvxjn8egq2n" path="res://assets/light.png" id="4_s71x4"]
 
 [node name="Main" type="Node2D"]
 
@@ -27,69 +27,124 @@ position_smoothing_enabled = true
 position_smoothing_speed = 10.0
 script = ExtResource("3")
 
-[node name="hitboxs" type="Node2D" parent="."]
+[node name="CanvasModulate" type="CanvasModulate" parent="."]
+color = Color(0.0160951, 0.0657002, 0.175709, 1)
 
-[node name="gaihithox" parent="hitboxs" instance=ExtResource("4_13k2b")]
-position = Vector2(790, 510)
-rotation = -0.000966278
-scale = Vector2(3.04, 1)
+[node name="lights" type="Node2D" parent="."]
 
-[node name="gaihithox14" parent="hitboxs" instance=ExtResource("4_13k2b")]
-position = Vector2(2325, 703)
-scale = Vector2(5.08, 1)
+[node name="PointLight2D" type="PointLight2D" parent="lights"]
+position = Vector2(1055, -197)
+color = Color(1, 1, 0.686275, 1)
+energy = 0.69
+shadow_enabled = true
+shadow_color = Color(0, 0, 0, 0.0823529)
+texture = ExtResource("4_s71x4")
+height = 4.0
 
-[node name="gaihithox15" parent="hitboxs" instance=ExtResource("4_13k2b")]
-position = Vector2(3070, 415)
-scale = Vector2(4.08719, 0.999862)
+[node name="PointLight2D2" type="PointLight2D" parent="lights"]
+position = Vector2(1055, -197)
+color = Color(1, 1, 0.686275, 1)
+energy = 0.69
+shadow_enabled = true
+shadow_color = Color(0, 0, 0, 0.0823529)
+texture = ExtResource("4_s71x4")
+height = 4.0
 
-[node name="gaihithox16" parent="hitboxs" instance=ExtResource("4_13k2b")]
-position = Vector2(3603, 415)
-scale = Vector2(2.4, 1)
+[node name="PointLight2D3" type="PointLight2D" parent="lights"]
+position = Vector2(1679, -149)
+color = Color(1, 1, 0.686275, 1)
+energy = 0.69
+shadow_enabled = true
+shadow_color = Color(0, 0, 0, 0.0823529)
+texture = ExtResource("4_s71x4")
+height = 4.0
 
-[node name="gaihithox2" parent="hitboxs" instance=ExtResource("4_13k2b")]
-position = Vector2(166, 800)
-scale = Vector2(3.04, 1)
+[node name="PointLight2D4" type="PointLight2D" parent="lights"]
+position = Vector2(2254, -245)
+color = Color(1, 1, 0.686275, 1)
+energy = 0.69
+shadow_enabled = true
+shadow_color = Color(0, 0, 0, 0.0823529)
+texture = ExtResource("4_s71x4")
+height = 4.0
 
-[node name="gaihithox3" parent="hitboxs" instance=ExtResource("4_13k2b")]
-position = Vector2(1030, 798)
-scale = Vector2(3.04, 1)
+[node name="PointLight2D5" type="PointLight2D" parent="lights"]
+position = Vector2(814, -389)
+color = Color(1, 1, 0.686275, 1)
+energy = 0.69
+shadow_enabled = true
+shadow_color = Color(0, 0, 0, 0.0823529)
+texture = ExtResource("4_s71x4")
+height = 4.0
 
-[node name="gaihithox4" parent="hitboxs" instance=ExtResource("4_13k2b")]
-position = Vector2(1390, 798)
-scale = Vector2(2.2, 1)
+[node name="PointLight2D6" type="PointLight2D" parent="lights"]
+position = Vector2(-193, 333)
+color = Color(1, 1, 0.686275, 1)
+energy = 0.69
+shadow_enabled = true
+shadow_color = Color(0, 0, 0, 0.0823529)
+texture = ExtResource("4_s71x4")
+height = 4.0
 
-[node name="gaihithox5" parent="hitboxs" instance=ExtResource("4_13k2b")]
-position = Vector2(672, 798)
-scale = Vector2(2.2, 1)
+[node name="PointLight2D7" type="PointLight2D" parent="lights"]
+position = Vector2(-770, 333)
+color = Color(1, 1, 0.686275, 1)
+energy = 0.69
+shadow_enabled = true
+shadow_color = Color(0, 0, 0, 0.0823529)
+texture = ExtResource("4_s71x4")
+height = 4.0
 
-[node name="gaihithox6" parent="hitboxs" instance=ExtResource("4_13k2b")]
-position = Vector2(-145, 654)
-scale = Vector2(2.2, 1)
+[node name="PointLight2D8" type="PointLight2D" parent="lights"]
+position = Vector2(-960, 523)
+color = Color(1, 1, 0.686275, 1)
+energy = 0.69
+shadow_enabled = true
+shadow_color = Color(0, 0, 0, 0.0823529)
+texture = ExtResource("4_s71x4")
+height = 4.0
 
-[node name="gaihithox7" parent="hitboxs" instance=ExtResource("4_13k2b")]
-position = Vector2(-361, 654)
-scale = Vector2(0.960003, 1)
+[node name="PointLight2D9" type="PointLight2D" parent="lights"]
+position = Vector2(-1585, 475)
+color = Color(1, 1, 0.686275, 1)
+energy = 0.69
+shadow_enabled = true
+shadow_color = Color(0, 0, 0, 0.0823529)
+texture = ExtResource("4_s71x4")
+height = 4.0
 
-[node name="gaihithox8" parent="hitboxs" instance=ExtResource("4_13k2b")]
-position = Vector2(-482, 511)
-scale = Vector2(4.08, 1)
+[node name="PointLight2D10" type="PointLight2D" parent="lights"]
+position = Vector2(-2019, 141)
+color = Color(1, 1, 0.686275, 1)
+energy = 0.69
+shadow_enabled = true
+shadow_color = Color(0, 0, 0, 0.0823529)
+texture = ExtResource("4_s71x4")
+height = 4.0
 
-[node name="gaihithox9" parent="hitboxs" instance=ExtResource("4_13k2b")]
-position = Vector2(-961, 654)
-scale = Vector2(2.08, 1)
+[node name="PointLight2D11" type="PointLight2D" parent="lights"]
+position = Vector2(-1298, -191)
+color = Color(1, 1, 0.686275, 1)
+energy = 0.69
+shadow_enabled = true
+shadow_color = Color(0, 0, 0, 0.0823529)
+texture = ExtResource("4_s71x4")
+height = 4.0
 
-[node name="gaihithox10" parent="hitboxs" instance=ExtResource("4_13k2b")]
-position = Vector2(-1249, 797)
-scale = Vector2(2.08, 1)
+[node name="PointLight2D12" type="PointLight2D" parent="lights"]
+position = Vector2(2592, 383)
+color = Color(1, 1, 0.686275, 1)
+energy = 0.69
+shadow_enabled = true
+shadow_color = Color(0, 0, 0, 0.0823529)
+texture = ExtResource("4_s71x4")
+height = 4.0
 
-[node name="gaihithox11" parent="hitboxs" instance=ExtResource("4_13k2b")]
-position = Vector2(-1659, 607)
-scale = Vector2(3.08, 1)
-
-[node name="gaihithox12" parent="hitboxs" instance=ExtResource("4_13k2b")]
-position = Vector2(-2040, 317)
-scale = Vector2(3.08, 1)
-
-[node name="gaihithox13" parent="hitboxs" instance=ExtResource("4_13k2b")]
-position = Vector2(-956, -67)
-scale = Vector2(2.52, 1)
+[node name="PointLight2D13" type="PointLight2D" parent="lights"]
+position = Vector2(3023, 191)
+color = Color(1, 1, 0.686275, 1)
+energy = 0.69
+shadow_enabled = true
+shadow_color = Color(0, 0, 0, 0.0823529)
+texture = ExtResource("4_s71x4")
+height = 4.0

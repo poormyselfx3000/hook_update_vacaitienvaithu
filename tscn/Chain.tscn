@@ -33,5 +33,5 @@ shape = SubResource("1")
 
 [node name="hookedsound" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("4_velac")
-volume_db = -14.629
+volume_db = -23.543
 pitch_scale = 1.79

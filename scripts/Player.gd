@@ -4,12 +4,11 @@ This script controls the player character.
 extends CharacterBody2D
 
 const JUMP_FORCE = 1000			# Force applied on jumping
-const MOVE_SPEED = 500			# Speed to walk with
 const GRAVITY = 60				# Gravity applied every second
 const MAX_SPEED = 2000			# Maximum speed the player is allowed to move
-const FRICTION_AIR = 0.95		# The friction while airborne
+const FRICTION_AIR = 0.92		# The friction while airborne
 const FRICTION_GROUND = 0.85	# The friction while on the ground
-const CHAIN_PULL = 105
+const CHAIN_PULL = 100
 
 
 var chain_velocity := Vector2(0,0)
@@ -28,8 +27,6 @@ func _input(event: InputEvent) -> void:
 # This function is called every physics frame
 func _physics_process(_delta: float) -> void:
 	# Walking
-	var walk = (Input.get_action_strength("right") - Input.get_action_strength("left")) * MOVE_SPEED
-
 	# Falling
 	velocity.y += GRAVITY
 
@@ -43,7 +40,7 @@ func _physics_process(_delta: float) -> void:
 		else:
 			# Pulling up is stronger
 			chain_velocity.y *= 1.65
-		if sign(chain_velocity.x) != sign(walk):
+		if sign(chain_velocity.x):
 			# if we are trying to walk in a different
 			# direction than the chain is pulling
 			# reduce its pull
@@ -53,11 +50,9 @@ func _physics_process(_delta: float) -> void:
 		chain_velocity = Vector2(0,0)
 	velocity += chain_velocity
 
-	velocity.x += walk		# apply the walking
 	set_velocity(velocity)
 	set_up_direction(Vector2.UP)
 	move_and_slide()	# Actually apply all the forces
-	velocity.x -= walk		# take away the walk speed again
 	# ^ This is done so we don't build up walk speed over time
 
 	# Manage friction and refresh jump and stuff

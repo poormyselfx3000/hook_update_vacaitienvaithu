@@ -61,6 +61,7 @@ func hooked_sound():
 		count = 0
 		
 	if count == 1 :
+		$"..".can_jump = true 
 		$hookedsound.play()
 	
 		
