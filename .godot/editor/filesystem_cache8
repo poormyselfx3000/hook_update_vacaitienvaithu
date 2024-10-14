@@ -1,11 +1,11 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1728711098
+::res://::1728732763
 default_bus_layout.tres::AudioBusLayout::5581337769189378162::1728706720::0::1::::<><>::
-default_env.tres::Environment::4791237824608217227::1728711098::0::1::::<><>::
+default_env.tres::Environment::4791237824608217227::1728714244::0::1::::<><>::
 icon.png::CompressedTexture2D::7690177852189020392::1728634751::1728634829::1::::<><>::
 menu.gd::GDScript::-1::1728645673::0::1::::<>Node2D<>::
 Readme.md::TextFile::-1::1728646225::0::1::::<><>::
-::res://assets/::1728711233
+::res://assets/::1728711237
 char.png::CompressedTexture2D::8823330812980114176::1728709886::1728709887::1::::<><>::
 Dungeon Tile Set.png::CompressedTexture2D::2422984801959258722::1728637989::1728637990::1::::<><>::
 hook.png::CompressedTexture2D::4592250173464811374::1728709159::1728709160::1::::<><>::
@@ -13,18 +13,18 @@ light.png::CompressedTexture2D::3766741647810518067::1728711234::1728711237::1::
 link.png::CompressedTexture2D::1496538176663537724::1728710057::1728710058::1::::<><>::
 ::res://assets/sef/::1728641709
 hooked.wav::AudioStreamWAV::680899023918603343::1728641700::1728641709::1::::<><>::
-::res://scripts/::1728711048
+::res://scripts/::1728711486
 Camera2D.gd::GDScript::-1::1728634859::0::1::::<>Camera2D<>::
 Chain.gd::GDScript::-1::1728710504::0::1::::<>Node2D<>::
-Player.gd::GDScript::-1::1728711048::0::1::::<>CharacterBody2D<>::
-::res://Tiles/::1728707814
-tiles.tres::TileSet::5600602904098718119::1728707814::0::1::::<><>::uid://baryg81jjw65k::::res://assets/Dungeon Tile Set.png
+Player.gd::GDScript::-1::1728711486::0::1::::<>CharacterBody2D<>::
+::res://Tiles/::1728714245
+tiles.tres::TileSet::5600602904098718119::1728714245::0::1::::<><>::uid://baryg81jjw65k::::res://assets/Dungeon Tile Set.png
 Tiles.tscn::PackedScene::-1::1728634787::0::1::::<><>::res://assets/tiles.png
-::res://tscn/::1728711098
-Chain.tscn::PackedScene::3470629469796193848::1728711098::0::1::::<><>::uid://b6orxo784gv1g::::res://assets/hook.png<>uid://vk61aqm8t1qm::::res://assets/link.png<>res://scripts/Chain.gd<>uid://jx3kpn0u3eb4::::res://assets/sef/hooked.wav
+::res://tscn/::1728714245
+Chain.tscn::PackedScene::3470629469796193848::1728714158::0::1::::<><>::uid://b6orxo784gv1g::::res://assets/hook.png<>uid://vk61aqm8t1qm::::res://assets/link.png<>res://scripts/Chain.gd<>uid://jx3kpn0u3eb4::::res://assets/sef/hooked.wav
 gaihithox.gd::GDScript::-1::1728645320::0::1::::<>Area2D<>::
 gaihithox.tscn::PackedScene::5808076647128329326::1728708204::0::1::::<><>::res://tscn/gaihithox.gd
-Main.tscn::PackedScene::5966422793051705125::1728711056::0::1::::<><>::uid://cl18d18h6mb24::::res://Tiles/tiles.tres<>uid://chv0mxt4txdpe::::res://tscn/Player.tscn<>res://scripts/Camera2D.gd
-menu.tscn::PackedScene::4118003301952669831::1728711057::0::1::::<><>::res://menu.gd
-Player.tscn::PackedScene::5309055798765967318::1728711057::0::1::::<><>::res://scripts/Player.gd<>uid://bppg0356iji05::::res://tscn/Chain.tscn<>uid://dxyc77uydj6h5::::res://assets/char.png
+Main.tscn::PackedScene::5966422793051705125::1728714245::0::1::::<><>::uid://cl18d18h6mb24::::res://Tiles/tiles.tres<>uid://chv0mxt4txdpe::::res://tscn/Player.tscn<>res://scripts/Camera2D.gd<>uid://btwvxjn8egq2n::::res://assets/light.png
+menu.tscn::PackedScene::4118003301952669831::1728714158::0::1::::<><>::res://menu.gd
+Player.tscn::PackedScene::5309055798765967318::1728714158::0::1::::<><>::res://scripts/Player.gd<>uid://bppg0356iji05::::res://tscn/Chain.tscn<>uid://dxyc77uydj6h5::::res://assets/char.png<>uid://btwvxjn8egq2n::::res://assets/light.png
 tile_map.gd::GDScript::-1::1728707826::0::1::::<>TileMap<>::

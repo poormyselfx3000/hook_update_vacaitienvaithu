@@ -4,8 +4,5 @@ res://tscn/Main.tscn
 res://Tiles/tiles.tres
 res://tscn/Chain.tscn
 res://tscn/Player.tscn
-res://tscn/gaihithox.tscn
-res://menu.tscn
 res://tscn/menu.tscn
 res://scripts/Player.gd
-res://scripts/Chain.gd

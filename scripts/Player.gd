@@ -6,7 +6,7 @@ extends CharacterBody2D
 const JUMP_FORCE = 1000			# Force applied on jumping
 const GRAVITY = 60				# Gravity applied every second
 const MAX_SPEED = 2000			# Maximum speed the player is allowed to move
-const FRICTION_AIR = 0.92		# The friction while airborne
+const FRICTION_AIR = 0.95		# The friction while airborne
 const FRICTION_GROUND = 0.85	# The friction while on the ground
 const CHAIN_PULL = 100
 
@@ -89,4 +89,8 @@ func _physics_process(_delta: float) -> void:
 
 func restartgame():
 	get_tree().reload_current_scene()
-	get_tree().change_scene_to_file("res://menu.tscn")
+	
+
+
+
+	
