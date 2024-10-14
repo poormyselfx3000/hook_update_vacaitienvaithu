@@ -1,8 +1,0 @@
-res://default_bus_layout.tres
-res://default_env.tres
-res://tscn/Main.tscn
-res://Tiles/tiles.tres
-res://tscn/Chain.tscn
-res://tscn/Player.tscn
-res://tscn/menu.tscn
-res://scripts/Player.gd
